@@ -1,0 +1,12 @@
+{
+    "development":{
+    "REDIS_IP_ADDRESS":"127.0.0.1",
+    "REDIS_PORT":"6379"
+    },
+    
+    "production":{
+        "REDIS_IP_ADDRESS":"128.0.0.1",
+        "REDIS_PORT":"6379"
+            
+    }
+}

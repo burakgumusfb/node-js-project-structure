@@ -1,0 +1,13 @@
+{
+    "development":{
+    "MONGODB_IP_ADDRESS":"127.0.0.1",
+    "MONGODB_DATABASE_NAME":"NodeJS",
+    "MONGODB_PORT":"27017"
+    },
+    "production":{
+        "MONGODB_IP_ADDRESS":"128.0.0.1",
+        "MONGODB_DATABASE_NAME":"NodeJS",
+        "MONGODB_PORT":"27017"
+     }
+    
+}

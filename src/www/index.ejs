@@ -1,0 +1,66 @@
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+<div class="container">
+    <% if(usersMongoDb && usersMongoDb.length > 0 && usersRedis && usersRedis.length > 0 && usersMssql && usersMssql.length > 0 ) { %>
+        <div class="alert alert-success">Records Found!</div>
+        <div class="row">
+            <div class="table-responsive col-md-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>MongoDB</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <% usersMongoDb.forEach(function(user) { %>
+                                <td class="list-group-item">
+                                    <%= user.EMAIL %> -
+                                        <%= user.NAME %>
+                                </td>
+                                <% }); %>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive col-md-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Redis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <% usersRedis.forEach(function(user) { %>
+                                <td class="list-group-item">
+                                    <%= user.EMAIL %> -
+                                        <%= user.NAME %>
+                                </td>
+                                <% }); %>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive col-md-4">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Mssql</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <% usersMssql.forEach(function(user) { %>
+                                <td class="list-group-item">
+                                    <%= user.EMAIL %> -
+                                        <%= user.FULLNAME %>
+                                </td>
+                                <% }); %>
+                        </tr>
+                    </tbody>
+                </table
+        </div>
+        <% } else { %>
+            <div class="alert alert-danger">Records Not Found !</div>
+            <% } %>
+</div>

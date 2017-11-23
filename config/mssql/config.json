@@ -1,0 +1,14 @@
+{
+    "development":{
+    "MSSQL_IP_ADDRESS":"127.0.0.1",
+    "MSSQL_DATABASE_NAME":"NodeJS",
+    "MSSQL_USER_NAME":"sa",
+    "MSSQL_PASSWORD":"1"
+    },
+    "production":{
+        "MSSQL_IP_ADDRESS":"128.0.0.1",
+        "MSSQL_DATABASE_NAME":"NodeJS",
+        "MSSQL_USER_NAME":"username",
+        "MSSQL_PASSWORD":"123"
+        }
+}
